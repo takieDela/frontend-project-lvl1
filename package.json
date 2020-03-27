@@ -1,6 +1,6 @@
 {
-  "name": "frontend-project-lvl1-sofya-1",
-  "version": "1.0.0",
+  "name": "frontend-project-lvl1",
+  "version": "1.0.1",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,8 +20,10 @@
     "frontend-project-lvl1": "brain-games.js",
     "brain-games": "bin/brain-games.js"
   },
-  "description": "",
   "dependencies": {
-    "node-modules": "^1.0.1"
-  }
+    "node-modules": "^1.0.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "description": ""
 }
