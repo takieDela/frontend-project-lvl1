@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +18,11 @@
   "homepage": "https://github.com/takieDela/frontend-project-lvl1#readme",
   "bin": {
     "frontend-project-lvl1": "brain-games.js",
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
+    "brain-even": "^0.1.12",
     "node-modules": "^1.0.1",
     "readline-sync": "^1.4.10"
   },
