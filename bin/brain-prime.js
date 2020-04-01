@@ -6,17 +6,24 @@ const makeRandomInteger = (min, max) =>  {
     return Math.floor(rand);
 };
 
-const isEvenInteger = (integer) => integer % 2 === 0;
+const isPrimeInteger = (integer) => {
+    for (let i = 2; i < integer / 2; i += 1) {
+        if (integer % i === 0) {
+            return false;
+        }
+    }
+    return true;
+};
 
 const calculateRightAnswer = (number) => {
-    if (isEvenInteger(number)) {
+    if (isPrimeInteger(number)) {
         return 'yes';
     } else {
         return 'no';
     }
 };
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const logic = () => {
     const number = makeRandomInteger(1, 100);

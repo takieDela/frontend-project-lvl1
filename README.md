@@ -33,3 +33,11 @@
 <h3>Пример запуска игры brain-progression</h3>
 
 <a href="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU" target="_blank"><img src="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU.svg" /></a>
+
+<h3>Установка пакета brain-prime</h3>
+
+<a href="https://asciinema.org/a/yjMVoUykiufj4B7Mz6b3AutB9" target="_blank"><img src="https://asciinema.org/a/yjMVoUykiufj4B7Mz6b3AutB9.svg" /></a>
+
+<h3>Пример запуска игры brain-prime</h3>
+
+<a href="https://asciinema.org/a/1cxYrw8CGvGWQcX0wcNC29Hyt" target="_blank"><img src="https://asciinema.org/a/1cxYrw8CGvGWQcX0wcNC29Hyt.svg" /></a>

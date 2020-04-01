@@ -2,9 +2,9 @@
 import {game} from '../src/index.js'
 
 
-const makeRandomInteger = () =>  { // случайное число от 1 до 100
-    let randInt = Math.floor(1 + Math.random() * 100);
-    return randInt;
+const makeRandomInteger = (min, max) =>  { 
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 };
 
 const calculateRightAnswer = (numberOne, numberTwo) => {
@@ -22,8 +22,8 @@ const calculateRightAnswer = (numberOne, numberTwo) => {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const logic = () => {
-    const numberOne = makeRandomInteger();
-    const numberTwo = makeRandomInteger();
+    const numberOne = makeRandomInteger(1, 100);
+    const numberTwo = makeRandomInteger(1, 100);
     console.log(`Question: ${numberOne} ${numberTwo}`);
 
     const rightAnswer = calculateRightAnswer(numberOne, numberTwo);

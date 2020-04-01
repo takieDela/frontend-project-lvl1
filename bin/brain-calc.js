@@ -2,14 +2,14 @@
 import {game} from '../src/index.js'
 
 
-const makeRandomInteger = () =>  { // случайное число от 1 до 100
-    let randInt = Math.floor(1 + Math.random() * 100);
-    return randInt;
+const makeRandomInteger = (min, max) =>  { 
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 };
 
 const makeRandomOperator= () => {
     const operators = ['+', '-', '*'];
-    let randPosition = Math.floor(0 + Math.random() * 3);
+    let randPosition = makeRandomInteger(0, 2);
     return operators[randPosition];
 };
 
@@ -27,8 +27,8 @@ const calculateRightAnswer = (numberOne, numberTwo, operator) => {
 const rules = 'What is the result of the expression?';
 
 const logic = () => {
-    const numberOne = makeRandomInteger();
-    const numberTwo = makeRandomInteger();
+    const numberOne = makeRandomInteger(1, 100);
+    const numberTwo = makeRandomInteger(1, 100);
     const operator = makeRandomOperator();
     console.log(`Question: ${numberOne} ${operator} ${numberTwo}`);
 

@@ -2,7 +2,7 @@
 import {game} from '../src/index.js'
 
 
-const makeRandomInteger = (min, max) =>  { // случайное число от 1 до 100
+const makeRandomInteger = (min, max) =>  { 
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 };
