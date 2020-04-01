@@ -25,3 +25,11 @@
 <h3>Пример запуска игры brain-gcd</h3>
 
 <a href="https://asciinema.org/a/4LIR0vglqgNDl2c4GVHMlQccQ" target="_blank"><img src="https://asciinema.org/a/4LIR0vglqgNDl2c4GVHMlQccQ.svg" /></a>
+
+<h3>Установка пакета brain-progression</h3>
+
+<a href="https://asciinema.org/a/g9CsQFbSuOLBLA5xxLEynA1LS" target="_blank"><img src="https://asciinema.org/a/g9CsQFbSuOLBLA5xxLEynA1LS.svg" /></a>
+
+<h3>Пример запуска игры brain-progression</h3>
+
+<a href="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU" target="_blank"><img src="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU.svg" /></a>
