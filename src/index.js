@@ -1,18 +1,15 @@
 import readlineSync from 'readline-sync';
+import { show } from './helpers.js';
 
-const setUserName = () => {
-  console.log('Welcome to the Brain Games!\n');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log('Hello, ' + userName + '!');
-  return userName;
+const getName = () => {
+  show('Welcome to the Brain Games!\n');
+  const user = readlineSync.question('May I have your name? ');
+  show('Hello, ' + user + '!');
+  return user;
 };
 
-const showGameRules = (rules) => {
-  console.log(rules);
-};
-
-const getQuestion = (logic) => {
-  const rightAnswer = logic();
+const getRightAnswer = (gameLogic) => {
+  const rightAnswer = gameLogic();
   return rightAnswer;
 };
 
@@ -21,33 +18,33 @@ const getUserAnswer = () => {
   return userAnswer;
 };
 
-const validation = (userAnswer, rightAnswer, userName) => {
-  if (userAnswer == rightAnswer) {
-    console.log('Correct!');
+const validationAnswer = (userAnswer, rightAnswer, user) => {
+  if (userAnswer === rightAnswer) {
+    show('Correct!');
     return true;
-  } else {
-    console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
-Let's try again, ${userName}!`);
-    return false;
   }
+  show(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
+Let's try again, ${user}!`);
+  return false;
 };
 
-const game = (rules, logic) => {
-  const userName = setUserName();
-  showGameRules(rules);
+const game = (rules, gameLogic) => {
+  const user = getName();
+  show(rules);
   let correctAnswers = 0;
-  
+
   while (correctAnswers !== 3) {
-    const rightAnswer = getQuestion(logic);
+    const rightAnswer = getRightAnswer(gameLogic);
     const userAnswer = getUserAnswer();
-    if (validation(userAnswer, rightAnswer, userName)) {
+
+    if (validationAnswer(userAnswer, rightAnswer, user)) {
       correctAnswers += 1;
     } else {
       correctAnswers = 0;
     }
   }
 
-  return console.log(`Congratulations, ${userName}!`);
+  return show(`Congratulations, ${user}!`);
 };
 
-export {game};
+export { game };

@@ -1,33 +1,21 @@
 #!/usr/bin/env node
-import {game} from '../src/index.js'
+import { game } from '../src/index.js';
+import {
+  getRandomInteger,
+  calculateGCD,
+  show
+} from '../src/helpers.js';
 
-
-const makeRandomInteger = (min, max) =>  { 
-    let rand = min + Math.random() * (max + 1 - min);
-    return Math.floor(rand);
-};
-
-const calculateRightAnswer = (numberOne, numberTwo) => {
-    const max = Math.max(numberOne, numberTwo);
-    const min = Math.min(numberOne, numberTwo);
-    let rightAnswer = 1;
-    for (let i = 1; i <= max / 2; i += 1 ) {
-        if (max % i === 0 && min % i === 0) {
-            rightAnswer = i;
-        }
-    };
-    return rightAnswer;
-};
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const logic = () => {
-    const numberOne = makeRandomInteger(1, 100);
-    const numberTwo = makeRandomInteger(1, 100);
-    console.log(`Question: ${numberOne} ${numberTwo}`);
+const gameLogic = () => {
+  const numberOne = getRandomInteger(1, 100);
+  const numberTwo = getRandomInteger(1, 100);
+  show(`Question: ${numberOne} ${numberTwo}`);
 
-    const rightAnswer = calculateRightAnswer(numberOne, numberTwo);
-    return rightAnswer;
+  const rightAnswer = calculateGCD(numberOne, numberTwo);
+  return rightAnswer;
 };
 
-game(rules, logic);
+game(rules, gameLogic);
