@@ -1,10 +1,9 @@
 import readlineSync from 'readline-sync';
-import { show } from './helpers.js';
 
 const getName = () => {
-  show('Welcome to the Brain Games!\n');
+  console.log('Welcome to the Brain Games!\n');
   const user = readlineSync.question('May I have your name? ');
-  show('Hello, ' + user + '!');
+  console.log('Hello, ' + user + '!');
   return user;
 };
 
@@ -13,29 +12,24 @@ const getRightAnswer = (gameLogic) => {
   return rightAnswer;
 };
 
-const getUserAnswer = () => {
-  const userAnswer = readlineSync.question('Your answer: ');
-  return userAnswer;
-};
-
 const validationAnswer = (userAnswer, rightAnswer, user) => {
   if (userAnswer === rightAnswer) {
-    show('Correct!');
+    console.log('Correct!');
     return true;
   }
-  show(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
+  console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
 Let's try again, ${user}!`);
   return false;
 };
 
 const game = (rules, gameLogic) => {
   const user = getName();
-  show(rules);
+  console.log(rules);
   let correctAnswers = 0;
 
   while (correctAnswers !== 3) {
     const rightAnswer = getRightAnswer(gameLogic);
-    const userAnswer = getUserAnswer();
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (validationAnswer(userAnswer, rightAnswer, user)) {
       correctAnswers += 1;
@@ -44,7 +38,7 @@ const game = (rules, gameLogic) => {
     }
   }
 
-  return show(`Congratulations, ${user}!`);
+  return console.log(`Congratulations, ${user}!`);
 };
 
 export { game };
