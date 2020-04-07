@@ -27,3 +27,5 @@ rules:
   no-fallthrough: 0
   prefer-template: 0
   import/prefer-default-export: 0
+  eqeqeq: 0
+  consistent-return: 0

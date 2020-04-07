@@ -16,7 +16,7 @@
 
 <h3>Пример запуска игры brain-calc</h3>
 
-<a href="https://asciinema.org/a/nL88El8D3HplVgvWoou8WxO4N" target="_blank"><img src="https://asciinema.org/a/nL88El8D3HplVgvWoou8WxO4N.svg" /></a>
+<a href="https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH" target="_blank"><img src="https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH.svg" /></a>
 
 <h3>Установка пакета brain-gcd</h3>
 
