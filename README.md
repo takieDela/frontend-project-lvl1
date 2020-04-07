@@ -4,40 +4,40 @@
 
 <h3>Установка пакета brain-even</h3>
 
-<a href="https://asciinema.org/a/j9xXboURQ22XRe4hRwOGfLEkU" target="_blank"><img src="https://asciinema.org/a/j9xXboURQ22XRe4hRwOGfLEkU.svg" /></a>
+<a href="https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So" target="_blank"><img src="https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So.svg" /></a>
 
 <h3>Пример запуска игры brain-even</h3>
 
-<a href="https://asciinema.org/a/DQJFTsM9n8mahmfOMch5UUbyG" target="_blank"><img src="https://asciinema.org/a/DQJFTsM9n8mahmfOMch5UUbyG.svg" /></a>
+<a href="https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0" target="_blank"><img src="https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0.svg" /></a>
 
 <h3>Установка пакета brain-calc</h3>
 
-<a href="https://asciinema.org/a/BNjuC9uUjMAlBut86UXHx7eym" target="_blank"><img src="https://asciinema.org/a/BNjuC9uUjMAlBut86UXHx7eym.svg" /></a>
+<a href="https://asciinema.org/a/Mb9H4LxZyQm2zOXLqQdNHa4bn" target="_blank"><img src="https://asciinema.org/a/Mb9H4LxZyQm2zOXLqQdNHa4bn.svg" /></a>
 
 <h3>Пример запуска игры brain-calc</h3>
 
-<a href="https://asciinema.org/a/DfUNAiI5SkvSPfXsx6SS3d2Lm" target="_blank"><img src="https://asciinema.org/a/DfUNAiI5SkvSPfXsx6SS3d2Lm.svg" /></a>
+<a href="https://asciinema.org/a/nL88El8D3HplVgvWoou8WxO4N" target="_blank"><img src="https://asciinema.org/a/nL88El8D3HplVgvWoou8WxO4N.svg" /></a>
 
 <h3>Установка пакета brain-gcd</h3>
 
-<a href="https://asciinema.org/a/ZRpVI97zavCQnV8LfP1vMNucI" target="_blank"><img src="https://asciinema.org/a/ZRpVI97zavCQnV8LfP1vMNucI.svg" /></a>
+<a href="https://asciinema.org/a/Bl9i3ChMuTmWvujTvi2rPm0Gq" target="_blank"><img src="https://asciinema.org/a/Bl9i3ChMuTmWvujTvi2rPm0Gq.svg" /></a>
 
 <h3>Пример запуска игры brain-gcd</h3>
 
-<a href="https://asciinema.org/a/4LIR0vglqgNDl2c4GVHMlQccQ" target="_blank"><img src="https://asciinema.org/a/4LIR0vglqgNDl2c4GVHMlQccQ.svg" /></a>
+<a href="https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR" target="_blank"><img src="https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR.svg" /></a>
 
 <h3>Установка пакета brain-progression</h3>
 
-<a href="https://asciinema.org/a/g9CsQFbSuOLBLA5xxLEynA1LS" target="_blank"><img src="https://asciinema.org/a/g9CsQFbSuOLBLA5xxLEynA1LS.svg" /></a>
+<a href="https://asciinema.org/a/opgpSApGf9Y7zxwjizbyVWMl1" target="_blank"><img src="https://asciinema.org/a/opgpSApGf9Y7zxwjizbyVWMl1.svg" /></a>
 
 <h3>Пример запуска игры brain-progression</h3>
 
-<a href="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU" target="_blank"><img src="https://asciinema.org/a/r8rbJvv75EtOLMeoWbqe4FBoU.svg" /></a>
+<a href="https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA" target="_blank"><img src="https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA.svg" /></a>
 
 <h3>Установка пакета brain-prime</h3>
 
-<a href="https://asciinema.org/a/yjMVoUykiufj4B7Mz6b3AutB9" target="_blank"><img src="https://asciinema.org/a/yjMVoUykiufj4B7Mz6b3AutB9.svg" /></a>
+<a href="https://asciinema.org/a/eMqWjqIoeTKaw6GEJw7Redz7n" target="_blank"><img src="https://asciinema.org/a/eMqWjqIoeTKaw6GEJw7Redz7n.svg" /></a>
 
 <h3>Пример запуска игры brain-prime</h3>
 
-<a href="https://asciinema.org/a/1cxYrw8CGvGWQcX0wcNC29Hyt" target="_blank"><img src="https://asciinema.org/a/1cxYrw8CGvGWQcX0wcNC29Hyt.svg" /></a>
+<a href="https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34" target="_blank"><img src="https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34.svg" /></a>

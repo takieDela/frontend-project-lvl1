@@ -13,13 +13,12 @@ const calculate = (numberOne, numberTwo, operator) => {
   let result = 0;
   switch (operator) {
     case '+':
-      result = numberOne + numberTwo;
+      return numberOne + numberTwo;
     case '-':
-      result = numberOne - numberTwo;
+      return numberOne - numberTwo;
     case '*':
-      result = numberOne * numberTwo;
+      return numberOne * numberTwo;
   }
-  return result;
 };
 
 
@@ -31,7 +30,7 @@ const gameLogic = () => {
   const operator = getRandomOperator();
 
   console.log(`Question: ${numberOne} ${operator} ${numberTwo}`);
-
+  console.log(operator)
   const rightAnswer = calculate(numberOne, numberTwo, operator);
   return rightAnswer;
 };

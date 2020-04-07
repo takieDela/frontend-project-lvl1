@@ -6,7 +6,7 @@ const getRightAnswer = (gameLogic) => {
 };
 
 const validationAnswer = (userAnswer, rightAnswer, user) => {
-  if (userAnswer === rightAnswer) {
+  if (userAnswer == rightAnswer) {
     console.log('Correct!');
     return true;
   }
