@@ -23,7 +23,7 @@ const gameLogic = () => {
   console.log(`Question: ${numberOne} ${numberTwo}`);
 
   const rightAnswer = calculateGCD(numberOne, numberTwo);
-  return rightAnswer;
+  return String(rightAnswer);
 };
 
 export { rules, gameLogic };

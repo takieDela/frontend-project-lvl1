@@ -6,7 +6,7 @@ const getRightAnswer = (gameLogic) => {
 };
 
 const validationAnswer = (userAnswer, rightAnswer, user) => {
-  if (userAnswer == rightAnswer) {
+  if (userAnswer === rightAnswer) {
     console.log('Correct!');
     return true;
   }
@@ -18,7 +18,7 @@ Let's try again, ${user}!`);
 const game = (rules, gameLogic) => {
   console.log('Welcome to the Brain Games!\n');
   const user = readlineSync.question('May I have your name? ');
-  console.log('Hello, ' + user + '!');
+  console.log(`Hello, '${user}'!'`);
   console.log(rules);
   let correctAnswers = 0;
 
@@ -36,4 +36,4 @@ const game = (rules, gameLogic) => {
   return console.log(`Congratulations, ${user}!`);
 };
 
-export { game };
+export default game;

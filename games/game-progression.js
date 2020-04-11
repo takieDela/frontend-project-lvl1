@@ -18,9 +18,11 @@ const getRandomProgressionMember = (progression) => {
   return rightAnswer;
 };
 
-const hideRandomProgressionMember = (progression, rightAnswer) => {
-  const hideMemberPosition = progression.indexOf(rightAnswer);
-  progression[hideMemberPosition] = '..';
+const createQuestion = (progression, rightAnswer) => {
+  const question = [...progression];
+  question[progression.indexOf(rightAnswer)] = '..';
+
+  return question;
 };
 
 
@@ -32,12 +34,11 @@ const gameLogic = () => {
   const progression = getRandomProgression(firstNumber, difference, 10);
 
   const rightAnswer = getRandomProgressionMember(progression);
-  hideRandomProgressionMember(progression, rightAnswer);
 
-  const progressionStr = progression.join(' ');
-  console.log(`Question: ${progressionStr}`);
+  const question = createQuestion(progression, rightAnswer);
+  console.log(`Question: ${question.join(' ')}`);
 
-  return rightAnswer;
+  return String(rightAnswer);
 };
 
 export { rules, gameLogic };
