@@ -1,3 +1,5 @@
+import engine from '../src/engine.js'
+
 const getRandomInteger = (min, max) => {
   const rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
@@ -29,4 +31,8 @@ const gameLogic = () => {
   return rightAnswer;
 };
 
-export { rules, gameLogic };
+const startFunction = () => {
+  engine(rules, gameLogic);
+}
+
+export default startFunction;

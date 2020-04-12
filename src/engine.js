@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
-const getRightAnswer = (gameLogic) => {
-  const rightAnswer = gameLogic();
+const getRightAnswer = (startFunction) => {
+  const rightAnswer = startFunction();
   return rightAnswer;
 };
 
@@ -15,7 +15,7 @@ Let's try again, ${user}!`);
   return false;
 };
 
-const game = (rules, gameLogic) => {
+const game = (rules, startFunction) => {
   console.log('Welcome to the Brain Games!\n');
   const user = readlineSync.question('May I have your name? ');
   console.log(`Hello, '${user}'!'`);
@@ -23,7 +23,7 @@ const game = (rules, gameLogic) => {
   let correctAnswers = 0;
 
   while (correctAnswers !== 3) {
-    const rightAnswer = getRightAnswer(gameLogic);
+    const rightAnswer = getRightAnswer(startFunction);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (validationAnswer(userAnswer, rightAnswer, user)) {
