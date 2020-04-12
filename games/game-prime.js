@@ -1,9 +1,6 @@
-import engine from '../src/engine.js'
+import engine from '../src/engine.js';
+import getRandomInteger from '../src/getRandomInteger.js';
 
-const getRandomInteger = (min, max) => {
-  const rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
-};
 
 const isPrimeInteger = (integer) => {
   for (let i = 2; i < integer / 2; i += 1) {
