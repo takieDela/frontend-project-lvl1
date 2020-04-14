@@ -2,21 +2,6 @@ import engine from '../src/engine.js';
 import getRandomInteger from '../src/getRandomInteger.js';
 
 
-const getRandomProgression = (firstNumber, difference, quantity) => {
-  const randomProgression = [];
-  for (let i = 0; i < quantity; i += 1) {
-    const number = firstNumber + i * difference;
-    randomProgression.push(number);
-  }
-  return randomProgression;
-};
-
-const getRandomProgressionMember = (progression) => {
-  const randomPosition = getRandomInteger(0, progression.length - 1);
-  const rightAnswer = progression[randomPosition];
-  return rightAnswer;
-};
-
 const createQuestion = (progression, rightAnswer) => {
   const question = [...progression];
   question[progression.indexOf(rightAnswer)] = '..';
@@ -28,6 +13,20 @@ const createQuestion = (progression, rightAnswer) => {
 const rules = 'What number is missing in the progression?';
 
 const gameLogic = () => {
+  const getRandomProgression = (firstNumber, difference, quantity) => {
+    const randomProgression = [];
+    for (let i = 0; i < quantity; i += 1) {
+      const number = firstNumber + i * difference;
+      randomProgression.push(number);
+    }
+    return randomProgression;
+  };
+  
+  const getRandomProgressionMember = (progression) => {
+    const randomPosition = getRandomInteger(0, progression.length - 1);
+    const rightAnswer = progression[randomPosition];
+    return rightAnswer;
+  };
   const firstNumber = getRandomInteger(-50, 50);
   const difference = getRandomInteger(-5, 5);
   const progression = getRandomProgression(firstNumber, difference, 10);

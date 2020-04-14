@@ -11,15 +11,15 @@ const sayYesOrNo = (boolean) => {
   return 'no';
 };
 
-
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 
 const gameLogic = () => {
   const number = getRandomInteger(1, 100);
-  console.log(`Question: ${number}`);
-
+  const question = `Question: ${number}`;
   const rightAnswer = sayYesOrNo(isEvenInteger(number));
-  return rightAnswer;
+
+  return [ rightAnswer, question ];
 };
 
 const startFunction = () => {

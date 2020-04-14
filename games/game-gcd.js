@@ -19,10 +19,11 @@ const rules = 'Find the greatest common divisor of given numbers.';
 const gameLogic = () => {
   const numberOne = getRandomInteger(1, 100);
   const numberTwo = getRandomInteger(1, 100);
-  console.log(`Question: ${numberOne} ${numberTwo}`);
+
+  const question = `Question: ${numberOne} ${numberTwo}`;
 
   const rightAnswer = calculateGCD(numberOne, numberTwo);
-  return String(rightAnswer);
+  return [String(rightAnswer), question];
 };
 
 const startFunction = () => {

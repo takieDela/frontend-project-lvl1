@@ -4,7 +4,7 @@ import getRandomInteger from '../src/getRandomInteger.js';
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
-  const randOperatorPosition = getRandomInteger(0, 2);
+  const randOperatorPosition = getRandomInteger(0, operators.length - 1);
   return operators[randOperatorPosition];
 };
 
@@ -32,10 +32,11 @@ const gameLogic = () => {
   const numberOne = getRandomInteger(1, 100);
   const numberTwo = getRandomInteger(1, 100);
   const operator = getRandomOperator();
+  
+  const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
 
-  console.log(`Question: ${numberOne} ${operator} ${numberTwo}`);
   const rightAnswer = calculate(numberOne, numberTwo, operator);
-  return String(rightAnswer);
+  return [String(rightAnswer), question];
 };
 
 const startFunction = () => {
