@@ -1,46 +1,35 @@
 import engine from '../src/engine.js';
-import getRandomInteger from '../src/getRandomInteger.js';
-
-
-const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
-  const randOperatorPosition = getRandomInteger(0, operators.length - 1);
-  return operators[randOperatorPosition];
-};
-
-const calculate = (numberOne, numberTwo, operator) => {
-  let result;
-  switch (operator) {
-    case '+':
-      result = numberOne + numberTwo;
-      break;
-    case '-':
-      result = numberOne - numberTwo;
-      break;
-    case '*':
-      result = numberOne * numberTwo;
-      break;
-    default:
-  }
-  return result;
-};
+import getRandomNumber from '../src/getRandomNumber.js';
 
 
 const rules = 'What is the result of the expression?';
 
 const gameLogic = () => {
-  const numberOne = getRandomInteger(1, 100);
-  const numberTwo = getRandomInteger(1, 100);
-  const operator = getRandomOperator();
-  
+  const numberOne = getRandomNumber(1, 100);
+  const numberTwo = getRandomNumber(1, 100);
+  const operators = ['+', '-', '*'];
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
 
-  const rightAnswer = calculate(numberOne, numberTwo, operator);
+  let rightAnswer;
+  switch (operator) {
+    case '+':
+      rightAnswer = numberOne + numberTwo;
+      break;
+    case '-':
+      rightAnswer = numberOne - numberTwo;
+      break;
+    case '*':
+      rightAnswer = numberOne * numberTwo;
+      break;
+    default:
+  }
+
   return [String(rightAnswer), question];
 };
 
-const startFunction = () => {
+const game = () => {
   engine(rules, gameLogic);
-}
+};
 
-export default startFunction;
+export default game;

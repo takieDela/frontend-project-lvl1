@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 
-const validationAnswer = (userAnswer, rightAnswer) => userAnswer === rightAnswer;
 
-const engine = (rules, startFunction) => {
+const engine = (rules, game) => {
   console.log('Welcome to the Brain Games!\n');
   const user = readlineSync.question('May I have your name? ');
   console.log(`Hello, '${user}'!'`);
@@ -11,11 +10,11 @@ const engine = (rules, startFunction) => {
   let correctAnswers = 0;
 
   while (correctAnswers !== 3) {
-    const [rightAnswer, question] = startFunction();
+    const [rightAnswer, question] = game();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (validationAnswer(userAnswer, rightAnswer, user)) { 
+    if (userAnswer === rightAnswer) {
       correctAnswers += 1;
       console.log('Correct!');
     } else {

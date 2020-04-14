@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import startFunction from '../games/game-gcd.js';
+import game from '../games/game-gcd.js';
 
-startFunction();
+game();
