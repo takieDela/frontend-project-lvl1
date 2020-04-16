@@ -32,5 +32,12 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2"
   },
-  "description": ""
+  "description": "The package contains 5 simple games with numbers: calculator, even number, find GCD, prime number and find the hidden member of the progression",
+  "keywords": [
+    "calculator",
+    "is even number",
+    "find gcd",
+    "is prime number",
+    "find member progression"
+  ]
 }
