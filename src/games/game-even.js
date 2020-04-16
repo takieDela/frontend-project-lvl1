@@ -1,5 +1,5 @@
-import engine from '../src/engine.js';
-import getRandomNumber from '../src/getRandomNumber.js';
+import engine from '../engine.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
