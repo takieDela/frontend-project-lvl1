@@ -33,8 +33,6 @@ jobs:
         # Install and build project
         run: |
           make install
-        # Add environment variables
-    
       - name: Run linter
         # Run Linter
         run: |
