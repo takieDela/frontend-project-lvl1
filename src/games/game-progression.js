@@ -8,8 +8,9 @@ const gameLogic = () => {
   const firstNumber = getRandomNumber(-50, 50);
   const difference = getRandomNumber(-5, 5);
   const progression = [];
+  const progressionLength = 10;
 
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     const number = firstNumber + i * difference;
     progression.push(number);
   }
