@@ -8,8 +8,10 @@ const engine = (rules, game) => {
   console.log(rules);
 
   let correctAnswers = 0;
+  let round = 0;
+  const maxRound = 3;
 
-  while (correctAnswers !== 3) {
+  while (round !== maxRound) {
     const [rightAnswer, question] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -22,9 +24,14 @@ const engine = (rules, game) => {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
 Let's try again, ${user}!`);
     }
+    round += 1;
   }
 
-  return console.log(`Congratulations, ${user}!`);
+  if (correctAnswers === maxRound) {
+    console.log(`Congratulations, ${user}!`);
+  }
+
+  return;
 };
 
 export default engine;
