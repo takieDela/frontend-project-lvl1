@@ -18,7 +18,7 @@ const gameLogic = () => {
   const rightAnswer = progression[randomPosition];
   progression[randomPosition] = '..';
 
-  const question = `Question: ${progression.join(' ')}`;
+  const question = `${progression.join(' ')}`;
 
   return [String(rightAnswer), question];
 };

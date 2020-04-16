@@ -7,7 +7,7 @@ const rules = 'Find the greatest common divisor of given numbers.';
 const gameLogic = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
-  const question = `Question: ${numberOne} ${numberTwo}`;
+  const question = `${numberOne} ${numberTwo}`;
   const max = Math.max(numberOne, numberTwo);
   const min = Math.min(numberOne, numberTwo);
 

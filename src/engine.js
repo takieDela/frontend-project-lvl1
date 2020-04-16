@@ -11,7 +11,7 @@ const engine = (rules, game) => {
 
   while (correctAnswers !== 3) {
     const [rightAnswer, question] = game();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === rightAnswer) {

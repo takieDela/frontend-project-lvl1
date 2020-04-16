@@ -9,7 +9,7 @@ const gameLogic = () => {
   const numberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNumber(0, operators.length - 1)];
-  const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
+  const question = `${numberOne} ${operator} ${numberTwo}`;
 
   let rightAnswer;
   switch (operator) {
