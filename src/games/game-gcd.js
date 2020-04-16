@@ -2,7 +2,7 @@ import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const findGCD = (numberOne, numberTwo) => {
   const max = Math.max(numberOne, numberTwo);
@@ -18,7 +18,7 @@ const findGCD = (numberOne, numberTwo) => {
   return rightAnswer;
 }
 
-const gameLogic = () => {
+const startGame = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
   const question = `${numberOne} ${numberTwo}`;
@@ -28,7 +28,7 @@ const gameLogic = () => {
 };
 
 const game = () => {
-  engine(rules, gameLogic);
+  engine(description, startGame);
 };
 
 export default game;

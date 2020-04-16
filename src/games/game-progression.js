@@ -2,9 +2,9 @@ import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const gameLogic = () => {
+const startGame = () => {
   const firstNumber = getRandomNumber(-50, 50);
   const difference = getRandomNumber(-5, 5);
   const progression = [];
@@ -26,7 +26,7 @@ const gameLogic = () => {
 
 
 const game = () => {
-  engine(rules, gameLogic);
+  engine(description, startGame);
 };
 
 export default game;

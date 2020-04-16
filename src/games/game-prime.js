@@ -2,7 +2,7 @@ import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   let rightAnswer = 'yes';
@@ -15,7 +15,7 @@ const isPrime = (number) => {
   return rightAnswer;
 };
 
-const gameLogic = () => {
+const startGame = () => {
   const number = getRandomNumber(1, 100);
   const question = `${number}`;
 
@@ -24,7 +24,7 @@ const gameLogic = () => {
 };
 
 const game = () => {
-  engine(rules, gameLogic);
+  engine(description, startGame);
 };
 
 export default game;

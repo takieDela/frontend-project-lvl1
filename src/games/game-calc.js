@@ -2,9 +2,9 @@ import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const gameLogic = () => {
+const startGame = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
@@ -29,7 +29,7 @@ const gameLogic = () => {
 };
 
 const game = () => {
-  engine(rules, gameLogic);
+  engine(description, startGame);
 };
 
 export default game;
