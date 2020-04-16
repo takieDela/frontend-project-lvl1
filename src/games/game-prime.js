@@ -4,9 +4,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameLogic = () => {
-  const number = getRandomNumber(1, 100);
-  const question = `${number}`;
+const isPrime = (number) => {
   let rightAnswer = 'yes';
 
   for (let i = 2; i < number / 2; i += 1) {
@@ -14,7 +12,14 @@ const gameLogic = () => {
       rightAnswer = 'no';
     }
   }
+  return rightAnswer;
+};
 
+const gameLogic = () => {
+  const number = getRandomNumber(1, 100);
+  const question = `${number}`;
+
+  const rightAnswer = isPrime(number);
   return [rightAnswer, question];
 };
 

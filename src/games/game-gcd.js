@@ -4,10 +4,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const gameLogic = () => {
-  const numberOne = getRandomNumber(1, 100);
-  const numberTwo = getRandomNumber(1, 100);
-  const question = `${numberOne} ${numberTwo}`;
+const findGCD = (numberOne, numberTwo) => {
   const max = Math.max(numberOne, numberTwo);
   const min = Math.min(numberOne, numberTwo);
 
@@ -18,6 +15,15 @@ const gameLogic = () => {
     }
   }
 
+  return rightAnswer;
+}
+
+const gameLogic = () => {
+  const numberOne = getRandomNumber(1, 100);
+  const numberTwo = getRandomNumber(1, 100);
+  const question = `${numberOne} ${numberTwo}`;
+
+  const rightAnswer = findGCD(numberOne, numberTwo);
   return [String(rightAnswer), question];
 };
 
