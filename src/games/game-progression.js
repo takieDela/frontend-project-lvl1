@@ -19,7 +19,7 @@ const startGame = () => {
   const rightAnswer = progression[randomPosition];
   progression[randomPosition] = '..';
 
-  const question = `${progression.join(' ')}`;
+  const question = String(progression.join(' '));
 
   return [String(rightAnswer), question];
 };

@@ -27,7 +27,7 @@ const returnYesOrNo = (expression) => {
 
 const startGame = () => {
   const number = getRandomNumber(1, 100);
-  const question = `${number}`;
+  const question = String(number);
 
   const rightAnswer = returnYesOrNo(isPrime(number));
   return [rightAnswer, question];

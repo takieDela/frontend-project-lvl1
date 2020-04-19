@@ -9,7 +9,7 @@ const startGame = () => {
   const numberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNumber(0, operators.length - 1)];
-  const question = `${numberOne} ${operator} ${numberTwo}`;
+  const question = String([numberOne, operator, numberTwo].join(' '));
 
   let rightAnswer;
   switch (operator) {
