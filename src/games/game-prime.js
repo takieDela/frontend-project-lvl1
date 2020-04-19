@@ -5,21 +5,31 @@ import getRandomNumber from '../getRandomNumber.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  let rightAnswer = 'yes';
-
-  for (let i = 2; i < number / 2; i += 1) {
+  let answer = true;
+  for (let i = 2; i <= number / 2; i += 1) {
     if (number % i === 0 && number !== i) {
-      rightAnswer = 'no';
+      answer = false;
     }
   }
-  return rightAnswer;
+  return answer;
+};
+
+const returnYesOrNo = (expression) => {
+  let answer;
+  if (expression === true) {
+    answer = 'yes';
+  }
+  if (expression === false) {
+    answer = 'no';
+  }
+  return answer;
 };
 
 const startGame = () => {
   const number = getRandomNumber(1, 100);
   const question = `${number}`;
 
-  const rightAnswer = isPrime(number);
+  const rightAnswer = returnYesOrNo(isPrime(number));
   return [rightAnswer, question];
 };
 
