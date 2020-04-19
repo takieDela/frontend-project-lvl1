@@ -17,7 +17,7 @@ const returnYesOrNo = (expression) => {
   return answer;
 };
 
-const startGame = () => {
+const generateGameData = () => {
   const number = getRandomNumber(1, 100);
   const question = String(number);
   const rightAnswer = returnYesOrNo(isEven(number));
@@ -25,8 +25,8 @@ const startGame = () => {
   return [rightAnswer, question];
 };
 
-const game = () => {
-  engine(description, startGame);
+const startGame = () => {
+  engine(description, generateGameData);
 };
 
-export default game;
+export default startGame;

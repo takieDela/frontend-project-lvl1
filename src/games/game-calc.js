@@ -4,7 +4,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const description = 'What is the result of the expression?';
 
-const startGame = () => {
+const generateGameData = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
@@ -28,8 +28,8 @@ const startGame = () => {
   return [String(rightAnswer), question];
 };
 
-const game = () => {
-  engine(description, startGame);
+const startGame = () => {
+  engine(description, generateGameData);
 };
 
-export default game;
+export default startGame;

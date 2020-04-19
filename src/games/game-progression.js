@@ -4,7 +4,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const description = 'What number is missing in the progression?';
 
-const startGame = () => {
+const generateGameData = () => {
   const firstNumber = getRandomNumber(-50, 50);
   const difference = getRandomNumber(-5, 5);
   const progression = [];
@@ -25,8 +25,8 @@ const startGame = () => {
 };
 
 
-const game = () => {
-  engine(description, startGame);
+const startGame = () => {
+  engine(description, generateGameData);
 };
 
-export default game;
+export default startGame;
