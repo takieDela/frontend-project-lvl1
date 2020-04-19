@@ -16,7 +16,7 @@ const findGCD = (numberOne, numberTwo) => {
   }
 
   return rightAnswer;
-}
+};
 
 const startGame = () => {
   const numberOne = getRandomNumber(1, 100);

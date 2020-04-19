@@ -7,12 +7,14 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const isEven = (number) => number % 2 === 0;
 
 const returnYesOrNo = (expression) => {
+  let answer;
   if (expression === true) {
-    return 'yes';
+    answer = 'yes';
   }
   if (expression === false) {
-    return 'no';
+    answer = 'no';
   }
+  return answer;
 };
 
 const startGame = () => {

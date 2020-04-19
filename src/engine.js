@@ -30,8 +30,6 @@ Let's try again, ${user}!`);
   if (correctAnswers === maxRound) {
     console.log(`Congratulations, ${user}!`);
   }
-
-  return;
 };
 
 export default engine;
