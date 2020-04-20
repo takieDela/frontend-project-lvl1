@@ -1,5 +1,5 @@
 # frontend-project-lvl1
-![Node CI](https://github.com/takieDela/frontend-project-lvl1/workflows/Node%20CI/badge.svg?branch=master)
+[![Node CI](https://github.com/takieDela/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/takieDela/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/04560a48a4f41bd0c7d9/maintainability)](https://codeclimate.com/github/takieDela/frontend-project-lvl1/maintainability)
 
 ### How to install the package:
