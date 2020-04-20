@@ -1,43 +1,33 @@
-<a href="https://codeclimate.com/github/takieDela/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/04560a48a4f41bd0c7d9/maintainability" /></a>
+# frontend-project-lvl1
+![Node CI](https://github.com/takieDela/frontend-project-lvl1/workflows/Node%20CI/badge.svg?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/04560a48a4f41bd0c7d9/maintainability)](https://codeclimate.com/github/takieDela/frontend-project-lvl1/maintainability)
 
-<a href="https://github.com/takieDela/frontend-project-lvl1/actions"><img src="https://github.com/takieDela/frontend-project-lvl1/workflows/Node CI/badge.svg" /></a>
+### How to install the package:
+First use `npm publish --dry-run` and after `sudo npm link` to install<br>    
 
-<h3>Установка пакета brain-even</h3>
+[![asciicast](https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So.svg)](https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So)
 
-<a href="https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So" target="_blank"><img src="https://asciinema.org/a/Fto7QqMZBJl1EV2PD3bdaH9So.svg" /></a>
+### Even Game:
+Use `brain-even` command to start<br>
 
-<h3>Пример запуска игры brain-even</h3>
+[![asciicast](https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0.svg)](https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0)
 
-<a href="https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0" target="_blank"><img src="https://asciinema.org/a/TVIQqwzk9ICJtaDhUs59tqqS0.svg" /></a>
+### Calc Game:
+Use `brain-calc` to start<br>
 
-<h3>Установка пакета brain-calc</h3>
+[![asciicast](https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH.svg)](https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH)
 
-<a href="https://asciinema.org/a/Mb9H4LxZyQm2zOXLqQdNHa4bn" target="_blank"><img src="https://asciinema.org/a/Mb9H4LxZyQm2zOXLqQdNHa4bn.svg" /></a>
+### GCD Game:
+Use `brain-gcd` to start<br>
 
-<h3>Пример запуска игры brain-calc</h3>
+[![asciicast](https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR.svg)](https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR)
 
-<a href="https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH" target="_blank"><img src="https://asciinema.org/a/SlomDHXVtuAvPeWYFB9WaoayH.svg" /></a>
+### Progression Game:
+Use `brain-progression` to Start<br>
 
-<h3>Установка пакета brain-gcd</h3>
+[![asciicast](https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA.svg)](https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA)
 
-<a href="https://asciinema.org/a/Bl9i3ChMuTmWvujTvi2rPm0Gq" target="_blank"><img src="https://asciinema.org/a/Bl9i3ChMuTmWvujTvi2rPm0Gq.svg" /></a>
+### Prime Game:
+Use `brain-prime` to Start<br>
 
-<h3>Пример запуска игры brain-gcd</h3>
-
-<a href="https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR" target="_blank"><img src="https://asciinema.org/a/OY2hyMsp7wbpR3igIu6P0y1AR.svg" /></a>
-
-<h3>Установка пакета brain-progression</h3>
-
-<a href="https://asciinema.org/a/opgpSApGf9Y7zxwjizbyVWMl1" target="_blank"><img src="https://asciinema.org/a/opgpSApGf9Y7zxwjizbyVWMl1.svg" /></a>
-
-<h3>Пример запуска игры brain-progression</h3>
-
-<a href="https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA" target="_blank"><img src="https://asciinema.org/a/pwa287mD9XHyeBvEqDbSrFYRA.svg" /></a>
-
-<h3>Установка пакета brain-prime</h3>
-
-<a href="https://asciinema.org/a/eMqWjqIoeTKaw6GEJw7Redz7n" target="_blank"><img src="https://asciinema.org/a/eMqWjqIoeTKaw6GEJw7Redz7n.svg" /></a>
-
-<h3>Пример запуска игры brain-prime</h3>
-
-<a href="https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34" target="_blank"><img src="https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34.svg" /></a>
+[![asciicast](https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34.svg)](https://asciinema.org/a/RheynKUHcjG8exynjDikXCD34)
