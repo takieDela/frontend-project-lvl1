@@ -1,6 +1,6 @@
 import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
-
+import returnYesOrNo from '../returnYesOrNo.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -10,17 +10,6 @@ const isPrime = (number) => {
     if (number % i === 0 && number !== i) {
       answer = false;
     }
-  }
-  return answer;
-};
-
-const returnYesOrNo = (expression) => {
-  let answer;
-  if (expression === true) {
-    answer = 'yes';
-  }
-  if (expression === false) {
-    answer = 'no';
   }
   return answer;
 };
