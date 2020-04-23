@@ -21,7 +21,7 @@ const findGCD = (numberOne, numberTwo) => {
 const generateGameData = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
-  const question = String([numberOne, numberTwo].join(' '));
+  const question = `${numberOne} ${numberTwo}`;
 
   const rightAnswer = findGCD(numberOne, numberTwo);
   return [String(rightAnswer), question];
