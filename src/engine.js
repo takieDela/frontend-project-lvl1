@@ -7,7 +7,6 @@ const engine = (description, generateGameData) => {
   console.log(`Hello, '${user}'!'`);
   console.log(description);
 
-  let correctAnswersCount = 0;
   const maxRound = 3;
 
   for (let i = 0; i < maxRound; i += 1) {
@@ -16,18 +15,13 @@ const engine = (description, generateGameData) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === rightAnswer) {
-      correctAnswersCount += 1;
       console.log('Correct!');
     } else {
-      correctAnswersCount = 0;
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
+      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
 Let's try again, ${user}!`);
     }
   }
-
-  if (correctAnswersCount === maxRound) {
-    console.log(`Congratulations, ${user}!`);
-  }
+  return console.log(`Congratulations, ${user}!`);
 };
 
 export default engine;
