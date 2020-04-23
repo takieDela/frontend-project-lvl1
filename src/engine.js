@@ -7,27 +7,25 @@ const engine = (description, generateGameData) => {
   console.log(`Hello, '${user}'!'`);
   console.log(description);
 
-  let correctAnswers = 0;
-  let round = 0;
+  let correctAnswer = 0;
   const maxRound = 3;
 
-  while (round !== maxRound) {
+  for (let i = 0; i < maxRound; i += 1) {
     const [rightAnswer, question] = generateGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === rightAnswer) {
-      correctAnswers += 1;
+      correctAnswer += 1;
       console.log('Correct!');
     } else {
-      correctAnswers = 0;
+      correctAnswer = 0;
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
 Let's try again, ${user}!`);
     }
-    round += 1;
   }
 
-  if (correctAnswers === maxRound) {
+  if (correctAnswer === maxRound) {
     console.log(`Congratulations, ${user}!`);
   }
 };
