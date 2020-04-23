@@ -5,6 +5,9 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const isPrime = (number) => {
   let answer = true;
+  if (number < 2) {
+    answer = false;
+  }
   for (let i = 2; i <= number / 2; i += 1) {
     if (number % i === 0 && number !== i) {
       answer = false;
