@@ -1,6 +1,5 @@
 import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
-import returnYesOrNo from '../returnYesOrNo.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -18,7 +17,7 @@ const generateGameData = () => {
   const number = getRandomNumber(1, 100);
   const question = String(number);
 
-  const rightAnswer = returnYesOrNo(isPrime(number));
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [rightAnswer, question];
 };
 
