@@ -15,10 +15,10 @@ const isPrime = (number) => {
 
 const generateGameData = () => {
   const number = getRandomNumber(1, 100);
-  const question = String(number);
+  const question = number;
 
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
-  return [rightAnswer, question];
+  return [rightAnswer, String(question)];
 };
 
 const startGame = () => {

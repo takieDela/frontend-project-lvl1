@@ -19,7 +19,7 @@ const generateGameData = () => {
   const rightAnswer = progression[randomPosition];
   progression[randomPosition] = '..';
 
-  const question = String(progression.join(' '));
+  const question = progression.join(' ');
 
   return [String(rightAnswer), question];
 };
