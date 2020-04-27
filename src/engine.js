@@ -22,7 +22,6 @@ Let's try again, ${user}!`);
     }
   }
   console.log(`Congratulations, ${user}!`);
-  return;
 };
 
 export default engine;
