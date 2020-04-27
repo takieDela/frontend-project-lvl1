@@ -7,7 +7,7 @@ const findGCD = (numberOne, numberTwo) => {
   const max = Math.max(numberOne, numberTwo);
   const min = Math.min(numberOne, numberTwo);
 
-  for (let i = 1; i <= max / 2; i += 1) {
+  for (let i = 2; i <= min; i += 1) {
     if (max % i === 0 && min % i === 0) {
       return i;
     }
