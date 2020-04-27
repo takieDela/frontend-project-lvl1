@@ -16,11 +16,13 @@ const engine = (description, generateGameData) => {
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
 Let's try again, ${user}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${user}!`);
+  console.log(`Congratulations, ${user}!`);
+  return;
 };
 
 export default engine;
