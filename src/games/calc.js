@@ -1,7 +1,6 @@
 import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-
 const description = 'What is the result of the expression?';
 
 const generateGameData = () => {

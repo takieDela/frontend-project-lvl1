@@ -1,7 +1,6 @@
 import engine from '../engine.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-
 const description = 'What number is missing in the progression?';
 
 const generateGameData = () => {
