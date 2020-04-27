@@ -7,14 +7,12 @@ const findGCD = (numberOne, numberTwo) => {
   const max = Math.max(numberOne, numberTwo);
   const min = Math.min(numberOne, numberTwo);
 
-  let rightAnswer = 1;
   for (let i = 1; i <= max / 2; i += 1) {
     if (max % i === 0 && min % i === 0) {
-      rightAnswer = i;
+      return i;
     }
   }
-
-  return rightAnswer;
+  return 1;
 };
 
 const generateGameData = () => {
